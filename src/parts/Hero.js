@@ -7,12 +7,12 @@ import ImgHero from "assets/images/img/img-hero.jpg";
 import FrameHero from "assets/images/img/img-frame-hero.jpg";
 
 import Button from "elements/Button";
-import NumberFormat from "react-number-format";
+import NumberFormat from "react-number-format"; //format number
 
 export default function Hero(props) {
   function showMostPicked() {
     window.scrollTo({
-      top: props.refMostPicked.currentoffsetTop - 30,
+      top: props.refMostPicked.current.offsetTop - 30,
       behavior: "smooth",
     });
   }
